@@ -1,0 +1,174 @@
+@import "../../Style/__variable.scss";
+
+.main-product-item-container
+{
+    @media (max-width: 1024px) {
+        padding-bottom: 580px;
+    }
+    @media (max-width: 900px) {
+        padding-bottom: 410px;
+    }
+    @media (max-width: 768px) {
+        padding-bottom: 250px;
+    }
+    @media (max-width: 700px) {
+        padding-bottom: 0;
+    }
+    @media (max-width: 414px) {
+        padding-bottom: 125px;
+    }
+    @media (max-width: 400px) {
+        padding-bottom: 60px;
+    }
+    .main-product-content
+    {
+        padding: 50px 40px;
+        @media (max-width: 768px) {
+            padding: 20px;
+        }
+        h2{
+            font-size: 40px;
+            color: $secondColor;
+            margin-bottom: 40px;
+            @media (max-width: 700px) {
+                font-size: 30px;
+            }
+        }
+        img{
+            width: 10px;
+        }
+        .search
+        {
+            border: $border;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            .img
+            {
+                display: inline-block;
+                height: 100%;
+                width: 5%;
+                text-align: center;
+                border-right: $border;
+                @media (max-width: 1024px) {
+                    width: 10%;
+                }
+                img{
+                    width: 15px;
+                }
+            }
+            input{
+                width: 94%;
+                font-size: 15px;
+                border: none;
+                outline: none;
+                height: 100%;
+                padding: 5px;
+                display: inline-block;
+                @media (max-width: 1024px) {
+                    width: 90%;
+                }
+                &::placeholder{
+                    color: rgba(194, 194, 194, 0.74);
+                    font-size: 13px;
+                    font-weight: 500;
+                }
+            }
+        }
+        .select-item
+        {
+            border: $border;
+            border-radius: 5px;
+            position: relative;
+            margin-bottom: 10px;
+            p{
+                color: #949494;
+                font-size: 20px;
+                width: 80%;
+                margin: 0;
+                display: inline-block;
+                padding: 0;
+                @media (max-width: 1024px) {
+                    width: 80%;
+                }
+            }
+            .arrow{
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                transform: translate(-10px, -50%);
+            }
+            .img
+            {
+                display: inline-block;
+                height: 100%;
+                width: 7%;
+                margin-right: 10px;
+                text-align: center;
+                border-right: $border;
+                @media (max-width: 1024px) {
+                    width: 10%;
+                }
+                img{
+                    width: 15px;
+                }
+            }
+        }
+        .filter-item
+        {
+            font-size: 14px;
+            span
+            {
+                margin: 10px 10px 10px 0;
+                display: inline-block;
+                padding: 4px 7px;
+                background-color: #e3e3e3;
+                border-radius: 5px;
+                img{
+                    cursor: pointer;
+                    margin-left: 5px;
+                    width: 7px;
+                }
+            }
+        }
+    }
+    .page-number
+    {
+        border-top: $border;
+        border-bottom: $border;
+        text-align: center;
+        span{
+            display: inline-block;
+            padding: 10px 50px;
+            font-size: 17px;
+            font-weight: 500;
+            border-right: $border;
+            width: 10%;
+            height: 100%;
+            small{
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                border-radius: 50%;
+                padding: 15px;
+                background-color: $mainColor;
+                color: #FFFFFF;
+            }
+            &:hover{
+
+            }
+        }
+        button{
+            background: none;
+            border: none;
+            width: 10%;
+            font-size: 17px;
+            display: inline-block;
+            height: 100%;
+            padding: 22px 0;
+        }
+        .prev{
+            border-right: $border;
+        }
+    }
+}

@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from "react";
+import SidebarItem from "./Component/SidebarItem";
+import ProductItem from "./Component/ProductItem";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App() {
+
+    const [click, setClick] = useState();
+
+    return(
+        <div className="main-app-container">
+            <div className="dropdown-list" onClick={() => setClick(!click)}>
+                <div> </div>
+                <div> </div>
+                <div> </div>
+            </div>
+            {click ? <div className="div-item"><SidebarItem /></div> : null}
+            <div className="main-sidebar">
+                <SidebarItem />
+            </div>
+            <div className="main-product">
+                <ProductItem />
+            </div>
+        </div>
+    )
 }
-
-export default App;

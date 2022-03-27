@@ -1,0 +1,88 @@
+@import "../../Style/__variable.scss";
+
+.main-sidebar-item-container
+{
+    @media (max-width: 1024px) {
+        padding-bottom: 580px;
+    }
+    @media (max-width: 900px) {
+        padding-bottom: 410px;
+    }
+    @media (max-width: 768px) {
+        padding-bottom: 250px;
+    }
+    @media (max-width: 700px) {
+        padding-bottom: 0;
+    }
+    @media (max-width: 414px) {
+        padding-bottom: 125px;
+    }
+    @media (max-width: 400px) {
+        padding-bottom: 60px;
+    }
+    .logo
+    {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 50px;
+        border-bottom: $border;
+        .logo-img
+        {
+            flex: 10%;
+            margin-right: 10px;
+            height: 35px;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, .2);
+            @media (max-width: 1024px) {
+                flex: 20%;
+            }
+            span{
+                display: inline-block;
+                width: 10px;
+                height: 20px;
+                line-height: 20px;
+                background-color: $mainColor;
+            }
+        }
+        .logo-details
+        {
+            flex: 80%;
+            h4{
+                margin-bottom: 5px;
+                font-size: 15px;
+                color: $secondColor;
+            }
+            p{
+                color: #d2d2d2;
+                letter-spacing: 4px;
+                margin: 0;
+                font-size: 10px;
+            }
+        }
+    }
+    .name-page
+    {
+        text-align: center;
+        padding: 4px 0;
+        border-bottom: $border;
+        margin: 0 0 20px 0;
+        img{
+            margin-top: 4px;
+            width: 14px;
+            margin-right: 7px;
+        }
+        strong{
+            margin: 0 7px 0 0;
+            color: $secondColor;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        span{
+            margin: 0;
+            font-size: 11px;
+            color: #d2d2d2;
+        }
+    }
+}

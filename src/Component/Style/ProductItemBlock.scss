@@ -1,0 +1,106 @@
+@import "../../Style/__variable.scss";
+
+.main-product-item-block-container
+{
+    padding-top: 34px;
+    .product-item
+    {
+        border: $border;
+        border-radius: 5px;
+        overflow: hidden;
+        margin-bottom: 15px;
+        .product-img
+        {
+            position: relative;
+            height: 200px;
+            border-bottom: $border;
+            .icon-heart{
+                position: absolute;
+                right: 20px;
+                top: 20px;
+                width: 35px;
+                height: 35px;
+                line-height: 25px;
+                text-align: center;
+                border-radius: 50%;
+                border: $border;
+                @media (max-width: 1024px) {
+                    top: 10px;
+                    right: 10px;
+                }
+                img{
+                    width: 15px !important;
+                }
+            }
+            img{
+                width: 100%!important;
+                height: 100%;
+            }
+        }
+        .product-details
+        {
+            padding: 20px;
+            position: relative;
+            h5
+            {
+                color: #8d8c8c;
+                font-size: 15px;
+                margin: 0;
+                @media (max-width: 1024px) {
+                    font-size: 13px;
+                }
+                strong{
+                    margin-right: 10px;
+                    color: $secondColor;
+                    font-size: 17px;
+                    @media (max-width: 1024px) {
+                        font-size: 13px;
+                    }
+                }
+                small{
+                    font-size: 17px;
+                    @media (max-width: 1024px) {
+                        font-size: 13px;
+                    }
+                }
+            }
+            p{
+                color: #8d8c8c;
+                font-weight: 400;
+                font-size: 20px;
+                @media (max-width: 1024px) {
+                    font-size: 15px;
+                }
+            }
+            h6{
+                margin: 10px 0;
+                font-size: 15px;
+                color: #2d2d2d;
+                @media (max-width: 1024px) {
+                    font-size: 13px;
+                    line-height: 20px;
+                }
+            }
+            .icon
+            {
+                position: absolute;
+                right: 20px;
+                bottom: 20px;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                background-color: $mainColor;
+                border-radius: 50%;
+                @media (max-width: 1024px) {
+                    width: 30px;
+                    height: 30px;
+                    line-height: 30px;
+                }
+                img{
+                    width: 15px;
+                }
+            }
+        }
+    }
+}
