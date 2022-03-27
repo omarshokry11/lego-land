@@ -41,12 +41,12 @@ export default function ProductItem() {
             <div className="page-number">
                 <button className="prev">Previous</button>
                 <span><small>01</small></span>
-                <span>02</span>
-                <span>03</span>
-                <span>04</span>
-                <span>05</span>
-                <span>06</span>
-                <span>07</span>
+                <span className="page-2">02</span>
+                <span className="page-none">03</span>
+                <span className="page-none">04</span>
+                <span className="page-none">05</span>
+                <span>....</span>
+                <span className="page-none">45</span>
                 <button>Next</button>
             </div>
         </div>
